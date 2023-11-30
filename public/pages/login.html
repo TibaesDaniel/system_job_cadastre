@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="stylesheet" href="../assets/css/login.css">
+    <link rel="shortcut icon" href="../assets/images/triangle.png" type="image/x-icon">
+    <title>Login</title>
+</head>
+<body>
+    <section class="boxLogin">
+        <div class="titleLogin">
+            <h1>WELCOME!</h1>
+            <h5>Login</h5>
+        </div>
+        <div class="boxForms">
+            <form action="../../app/helpers/confirmLogin.php" method="POST">
+                <input type="email" name="loginemail" class="inptEmailLogin" placeholder="E-mail..." required>
+                <input type="password" name="loginpassword" class="inptPasswordLogin" placeholder="Password..." required>
+                <a href="#" class="resetPass">Forgot your password ?</a>
+                <div class="boxBtnLogin">
+                    <a href="../pages/registration.html">Register</a>
+                    <button type="submit">Enter</button>
+                </div>
+        </div>
+    </section> 
+</body> 
+</html>

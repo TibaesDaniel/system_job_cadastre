@@ -1,0 +1,115 @@
+:root{
+    --maxWidthTxtFrame: 50rem;
+}
+body{
+    background-color: var(--backgroundPageGreen);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.frameGlobal{
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 70%;
+    max-width: 1260px;
+    margin: auto;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+.frameLeft{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--backgroundBoxLeft);
+    width: 30%;
+    padding:10rem;
+}
+.frameLeft img{
+    width: 5.5rem;
+    height: 5.5rem;
+    margin-bottom: 1rem;
+}
+
+.titleFrameLeft{
+    font-family: RobotoBold;
+    color: var(--white);
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+.txtFrameLeft{
+    font-family:RobotoRegular;
+    color: var(--white);
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    width: var(--maxWidthTxtFrame);
+}
+.frameRight{
+    width: 70%;
+}
+.frameRight{
+    background-color: var(--whitePageBack);
+    padding:4rem 3rem 3rem 7rem;
+    animation-name: slideInFromRight;
+    animation-duration: 1.5s; /* Duração da animação em segundos */
+    animation-fill-mode: forwards; /* Mantém o estilo final após a animação */
+
+}
+.frameRight h1{
+    font-family: RobotoBold;
+    color: var(--back);
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    position: relative;
+}
+.inputFormData{
+    width: 80%;
+    height: 4rem;
+    font-size: 1.5rem;
+    font-family: RobotoRegular;
+    padding-inline: .5rem;
+    border-color: transparent transparent hsl(0, 0%, 74%) transparent;
+}
+.inputFormData:focus{
+     outline: none;
+}
+#checkboxTerm{
+    width: 1.2rem;
+    height: 1.2rem;
+}
+.options{
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+    padding-block: 2rem;
+    margin-bottom: 8rem;
+}
+.options p{
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+}
+#btnRegisterSubmit{
+    width: 20rem;
+    height: 4rem;
+    position: absolute;
+    right: 3rem;
+    bottom: 0;
+
+    border: none;
+    border-radius: .5rem;
+    background-color: var(--btnBackground);
+    color: var(--white);
+    font-family:RobotoRegular;
+    font-size: 1.7rem;
+    cursor: pointer;
+}

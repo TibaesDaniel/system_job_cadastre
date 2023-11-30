@@ -1,0 +1,20 @@
+{
+    "name": "daniel/cadastre",
+    "description": "registration page",
+    "autoload": {
+        "files":[
+            "app/helpers/validate.php"
+
+        ],
+        "psr-4": {
+            "app\\": "app"
+        }
+    },
+    "authors": [
+        {
+            "name": "DanielTibaes505",
+            "email": "daniel.tibaes@outlook.com"
+        }
+    ],
+    "require": {}
+}

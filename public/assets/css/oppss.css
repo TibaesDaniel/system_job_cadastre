@@ -1,0 +1,57 @@
+body{
+    background-color: var(--backgroundPageGreen);
+}
+@keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+@keyframes rotateAndBounce {
+  0% {
+    transform: rotate(0) translateY(0);
+  }
+  50% {
+    transform: rotate(180deg) translateY(-20px);
+  }
+  100% {
+    transform: rotate(360deg) translateY(0);
+  }
+}
+.containerButtonValidate{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.imgBackValidate{
+    margin-bottom: 1rem;
+}
+.imgLoadValidadeSucess{
+  width: 20.6rem;
+  height: 20.6rem;
+  animation-name: rotateAndBounce;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+.btnSubmit{
+    background-color: var(--white);
+    color: var(--black);
+    font-size: 3rem;
+    font-family: RobotoBold;
+    border: none;
+    border-radius: 1rem;
+    padding: 2rem;
+    animation-name: bounce;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    text-decoration: none;
+    
+}

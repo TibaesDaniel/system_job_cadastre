@@ -1,0 +1,68 @@
+body{
+    background-color: var(--backgroundPageGreen);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: RobotoBold;
+    color: var(--white);
+}
+.boxLogin{
+    background-color: hsla(0, 0%, 100%, 0.521);
+    border-radius: .8rem;
+    padding-inline: 5rem;
+    padding-block: 10rem;
+}
+.titleLogin h1,h5{
+    color: var(--black);
+    text-align: center;
+}
+h1{
+    font-size: 5rem;
+}
+h5{
+    font-size: 3rem;
+    margin-bottom: 4rem;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+input{
+    height: 2.5rem;
+    padding-inline: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: .5rem;
+    border-color: transparent transparent black transparent;
+    background-color: hsla(0, 0%, 100%, 0.719);
+}
+input:focus{
+    outline: none;
+}
+.resetPass{
+    text-align: end;
+    color: var(--black);
+    text-decoration: none;
+    margin-bottom: 3rem;
+}
+.boxBtnLogin{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.boxBtnLogin button{
+    background-color: var(--btnBackground);
+    color: var(--white);
+    font-weight: bold;
+    border: none;
+    padding: 1rem 2.5rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+.boxBtnLogin a{
+    font-size: 1.2rem;
+    color: #585858;
+    cursor: pointer;
+}
